@@ -29,6 +29,7 @@ html[data-theme='dark'] {
     width: 70%;
     margin-bottom: 20px;
     color: var(--heading);
+    font-family: "Poppins";
     /* padding:20px; */
 }
 .aboutintro{
