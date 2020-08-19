@@ -1,29 +1,43 @@
-html{
+/*
+**stylesheet of footer
+*/
+html {
     --bg:white;
     --heading:black;
     --color:#6C63FF;
     --border:rgba(0,0,0,0.3);
-}
-html[data-theme='dark'] {
+  }
+  
+  html[data-theme='dark'] {
     --bg:#333333;
     --heading:white;
     --border:rgba(255,255,255,0.3);
-}
-footer{
+  }
+  
+  /* the footer */
+  footer {
     text-align: center;
-    padding:20px;
+    padding: 20px;
     background-color: var(--color);
     color: var(--bg);
     font-family: "Poppins";
     font-size: 14px;
-}
-@media(max-width:800px){
-    footer{
-        font-size: 12px;
+  }
+  
+  /* the footer */
+  /* mediaquery for responsiveness at 800px */
+  @media (max-width: 800px) {
+    footer {
+      font-size: 12px;
     }
-}
-@media(max-width:500px){
-    footer{
-        font-size: 10px;
+  }
+  
+  /* mediaquery for responsiveness at 800px */
+  /* mediaquery for responsiveness at 500px */
+  @media (max-width: 500px) {
+    footer {
+      font-size: 10px;
     }
-}
+  }
+  
+  /* mediaquery for responsiveness at 500px */

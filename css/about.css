@@ -1,144 +1,170 @@
-*{
-    padding:0px;
-    margin:0px;
-    box-sizing: border-box;
-}
-html{
+/*
+**stylesheet of about me section
+*/
+html {
     --bg:white;
     --heading:black;
     --color:#6C63FF;
     --border:rgba(0,0,0,0.3);
-}
-html[data-theme='dark'] {
+  }
+  
+  html[data-theme='dark'] {
     --bg:#333333;
     --heading:white;
     --border:rgba(255,255,255,0.3);
-}
-.aboutusmain{
+  }
+  
+  .aboutusmain {
     display: block;
-}
-.aboutme{
-    margin:0px 20px 0px 50px ;
-}
-.aboutheading{
+  }
+  
+  .aboutme {
+    margin: 0px 20px 0px 50px;
+  }
+  
+  .aboutheading {
     font-size: 50px;
     color: var(--border);
-    padding:50px 0px 20px 20px;
-}
-.aboutmedesc{
+    padding: 50px 0px 20px 20px;
+  }
+  
+  .aboutmedesc {
     width: 70%;
     margin-bottom: 20px;
     color: var(--heading);
     font-family: "Poppins";
-    /* padding:20px; */
-}
-.aboutintro{
+  }
+  
+  .aboutintro {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.downloadcv{
-    padding:20px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .downloadcv {
+    padding: 20px;
     border-radius: 10px;
     border: none;
     background-color: var(--color);
     color: var(--heading);
-    /* margin-left: 40px; */
-}
-.downloadcv:hover{
+  }
+  
+  .downloadcv:hover {
     background-color: aliceblue;
     color: var(--color);
-    border:1px solid var(--color)
-}
-.eachexperience{
-    /* background-color: rgb(7, 218, 165); */
+    border: 1px solid var(--color);
+  }
+  
+  .eachexperience {
     padding: 1em;
     border-radius: 10px;
-    /* width: 320px; */
-    clip-path: circle(17% at 20% 22%);
+    -webkit-clip-path: circle(17% at 20% 22%);
+            clip-path: circle(17% at 20% 22%);
+    -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
     cursor: pointer;
-
-}
-.eachexperience img{
+  }
+  
+  .eachexperience img {
     width: 50px;
     height: 50px;
-    border-radius:50% ;
-    margin:20px 0px 10px 50px;
-}
-.experience{
+    border-radius: 50%;
+    margin: 20px 0px 10px 50px;
+  }
+  
+  .experience {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: 20px;
     margin-left: 50px;
-    /* flex-wrap: wrap; */
-    /* align-items: center; */
-    /* width: 400px;*/
-    justify-content: space-around; 
-}
-.eachexperience:hover{
-    clip-path: circle(75%);
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  
+  .eachexperience:hover {
+    -webkit-clip-path: circle(75%);
+            clip-path: circle(75%);
     background-color: var(--color);
-}
-.eachexperience.open{
-    clip-path: circle(75%);
+  }
+  
+  .eachexperience.open {
+    -webkit-clip-path: circle(75%);
+            clip-path: circle(75%);
     background-color: var(--color);
-}
-.eachexperience img{
-    /* float: left; */
+  }
+  
+  .eachexperience img {
     color: var(--bg);
     font-weight: bold;
+    -webkit-transition: color .5s;
     transition: color .5s;
-    /* position: relative; */
-    /* margin-right: 6%; */
-}
-.eachexperience:hover span{
-    /* color: rgba(0, 0, 0, 0); */
-}
-.eachexperience h1,.eachexperience p{
-    color:var(--heading);
+  }
+  
+  .eachexperience h1, .eachexperience p {
+    color: var(--heading);
     display: block;
-    padding:10px;
-    /* display: none; */
-}
-
-@media(max-width:1100px){
-    .eachexperience{
-        clip-path: circle(20% at 35% 20%);
-    }   
-}
-@media(max-width:800px){
-    .eachexperience{
-        clip-path: circle(20% at 39% 20%);
-    }   
-}
-@media(max-width:600px){
-    .aboutsvg{
-        /* display: none; */
+    padding: 10px;
+  }
+  
+  /* mediaquery for responsiveness at 1100px */
+  @media (max-width: 1100px) {
+    .eachexperience {
+      -webkit-clip-path: circle(20% at 35% 20%);
+              clip-path: circle(20% at 35% 20%);
     }
-    .aboutintro{
-        flex-direction: column-reverse;
+  }
+  
+  /* mediaquery for responsiveness at 800px */
+  @media (max-width: 800px) {
+    .eachexperience {
+      -webkit-clip-path: circle(20% at 39% 20%);
+              clip-path: circle(20% at 39% 20%);
     }
-    .aboutmedesc{
-        width: 100%;
+  }
+  
+  /* mediaquery for responsiveness at 800px */
+  /* mediaquery for responsiveness at 600px */
+  @media (max-width: 600px) {
+    .aboutintro {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+          -ms-flex-direction: column-reverse;
+              flex-direction: column-reverse;
     }
-    .aboutheading{
-        font-size: 30px;
+    .aboutmedesc {
+      width: 100%;
     }
-    .experience{
-        flex-wrap: wrap;
-        flex-direction: column;
+    .aboutheading {
+      font-size: 30px;
     }
-    .eachexperience{
-        clip-path: circle(23% at 15% 20%)
-        /* clip-path: circle(35% at 50% 50%); */
+    .experience {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
     }
-    .eachexperience img{
-        margin: 0px;
+    .eachexperience {
+      -webkit-clip-path: circle(23% at 15% 20%);
+              clip-path: circle(23% at 15% 20%);
     }
-    .eachexperience h1,.eachexperience p{
-        display: none;
+    .eachexperience img {
+      margin: 0px;
     }
-    .eachexperience:hover h1, .eachexperience:hover p{
-        display: block;
-    }   
-}
+    .eachexperience h1, .eachexperience p {
+      display: none;
+    }
+    .eachexperience:hover h1, .eachexperience:hover p {
+      display: block;
+    }
+  }
+  
+  /* mediaquery for responsiveness at 600px */
