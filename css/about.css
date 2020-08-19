@@ -1,0 +1,143 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+html{
+    --bg:white;
+    --heading:black;
+    --color:#6C63FF;
+    --border:rgba(0,0,0,0.3);
+}
+html[data-theme='dark'] {
+    --bg:#333333;
+    --heading:white;
+    --border:rgba(255,255,255,0.3);
+}
+.aboutusmain{
+    display: block;
+}
+.aboutme{
+    margin:0px 20px 0px 50px ;
+}
+.aboutheading{
+    font-size: 50px;
+    color: var(--border);
+    padding:50px 0px 20px 20px;
+}
+.aboutmedesc{
+    width: 70%;
+    margin-bottom: 20px;
+    color: var(--heading);
+    /* padding:20px; */
+}
+.aboutintro{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.downloadcv{
+    padding:20px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--color);
+    color: var(--heading);
+    /* margin-left: 40px; */
+}
+.downloadcv:hover{
+    background-color: aliceblue;
+    color: var(--color);
+    border:1px solid var(--color)
+}
+.eachexperience{
+    /* background-color: rgb(7, 218, 165); */
+    padding: 1em;
+    border-radius: 10px;
+    /* width: 320px; */
+    clip-path: circle(15% at 23% 37%);
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+
+}
+.eachexperience img{
+    width: 50px;
+    height: 50px;
+    border-radius:50% ;
+    margin:20px 0px 10px 50px;
+}
+.experience{
+    display: flex;
+    margin: 20px;
+    margin-left: 50px;
+    /* flex-wrap: wrap; */
+    /* align-items: center; */
+    /* width: 400px;*/
+    justify-content: space-around; 
+}
+.eachexperience:hover{
+    clip-path: circle(75%);
+    background-color: var(--color);
+}
+.eachexperience.open{
+    clip-path: circle(75%);
+    background-color: var(--color);
+}
+.eachexperience img{
+    /* float: left; */
+    color: var(--bg);
+    font-weight: bold;
+    transition: color .5s;
+    /* position: relative; */
+    /* margin-right: 6%; */
+}
+.eachexperience:hover span{
+    /* color: rgba(0, 0, 0, 0); */
+}
+.eachexperience h1,.eachexperience p{
+    color:var(--heading);
+    display: block;
+    padding:10px;
+    /* display: none; */
+}
+
+@media(max-width:1100px){
+    .eachexperience{
+        clip-path: circle(20% at 35% 20%);
+    }   
+}
+@media(max-width:800px){
+    .eachexperience{
+        clip-path: circle(20% at 39% 20%);
+    }   
+}
+@media(max-width:600px){
+    .aboutsvg{
+        /* display: none; */
+    }
+    .aboutintro{
+        flex-direction: column-reverse;
+    }
+    .aboutmedesc{
+        width: 100%;
+    }
+    .aboutheading{
+        font-size: 30px;
+    }
+    .experience{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .eachexperience{
+        clip-path: circle(23% at 15% 20%)
+        /* clip-path: circle(35% at 50% 50%); */
+    }
+    .eachexperience img{
+        margin: 0px;
+    }
+    .eachexperience h1,.eachexperience p{
+        display: none;
+    }
+    .eachexperience:hover h1, .eachexperience:hover p{
+        display: block;
+    }   
+}
