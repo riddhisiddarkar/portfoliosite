@@ -55,7 +55,7 @@ html[data-theme='dark'] {
     padding: 1em;
     border-radius: 10px;
     /* width: 320px; */
-    clip-path: circle(15% at 23% 37%);
+    clip-path: circle(17% at 20% 22%);
     transition: all .5s ease-in-out;
     cursor: pointer;
 
