@@ -59,7 +59,6 @@ var scrollDistance = function (callback, refresh) {
 			// Calculate distance
 			end = window.pageYOffset;
 			distance = end - start;
-            console.log(distance)
 			// Run the callback
 			callback(distance, start, end);
 
@@ -80,7 +79,6 @@ if(localstoragecolor=="black"){
 document.documentElement.setAttribute('data-theme', 'dark')
 checkbox.checked=true}
 let boolhamburger=true
-console.log(window.innerWidth)
 let i=1
 let v= document.querySelectorAll(".introwords")
 setInterval(() => {

@@ -255,6 +255,10 @@ html.transition *:after {
     margin:auto;
     color: var(--heading);
 }
+
+.technologiesinabit svg:hover{
+    transform: scale(1.5);
+}
 .eachtechnology{
     margin:20px;
     padding:20px;
