@@ -1,5 +1,5 @@
 /*
-**stylesheet of about me section
+*stylesheet of about me section
 */
 html {
     --bg:white;
@@ -46,7 +46,6 @@ html {
         -ms-flex-align: center;
             align-items: center;
   }
-  
   .downloadcv {
     padding: 20px;
     border-radius: 10px;
@@ -130,7 +129,6 @@ html {
               clip-path: circle(20% at 39% 20%);
     }
   }
-  
   /* mediaquery for responsiveness at 800px */
   /* mediaquery for responsiveness at 600px */
   @media (max-width: 600px) {
@@ -168,5 +166,4 @@ html {
       display: block;
     }
   }
-  
   /* mediaquery for responsiveness at 600px */

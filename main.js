@@ -1,7 +1,6 @@
 // scroll function to navigate to a particular section from navbar
 function smoothScroll(target,duration)
 {
-    alert(target)
     let t=document.getElementsByClassName(target)[0]
     let targetPosition=t.getBoundingClientRect().top
     let startPosition=window.pageYOffset
